@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<title>Fun</title>
+
 	</head>
 	<body>
 		<p id="text">Hello World</p>
@@ -9,21 +10,22 @@
 	<p id="2p"> javascript is....<p>
 	<button id="button2">Append text</button>
 	
+		<p id="more text">this is some text</p>
+		<button id="stte">Style Text</button>
+
         <script type="text/javascript" >
 	alert('Page loaded')
 		
 		document.getElementById("text").innerHTML = "Hello people!"
 		document.getElementById("Mybutton").onclick = function() {
-			
-		document.getElementById("text").innerHTML = "Hello Friends"
+			document.getElementById("text").innerHTML = "Hello Friends"
 		}
 		document.getElementById("button2").onclick = function() {
 		document.getElementById("2p").innerHTML= document.getElementById("2p").innerHTML+"super awesome!"
 		}
-		
-		
+		document.getElementById("stte").onclick = function() {
+			document.getElementById("more text").style.color = "red"
+		}		
 	</script>
-		<p id="more text">this is some text</p>
-		<button id="stte">Style Text</button>
-	</body>
+		</body>
 </html>
